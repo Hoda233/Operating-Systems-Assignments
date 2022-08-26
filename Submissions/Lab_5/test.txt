@@ -1,0 +1,94 @@
+os@neon-virtualbox:~/lab5$ gcc lab5.c -o c
+os@neon-virtualbox:~/lab5$ ./c
+
+Please, Enter a value to search for and the numbers array to search in.
+os@neon-virtualbox:~/lab5$ ./c 5 1 2
+
+I am the parent, PID = 2564
+
+I am the first child, PID = 2565, PPID = 2564
+
+I am the second child, PID = 2566, PPID = 2564
+
+Child 1 Terminates
+
+Child 2 Terminates
+
+Value Not Found
+os@neon-virtualbox:~/lab5$ ./c 5 1 5
+
+I am the first child, PID = 2568, PPID = 2567
+
+I am the parent, PID = 2567
+
+I am the second child, PID = 2569, PPID = 2567
+
+Child 2: Value 5 found at position 1
+Killed
+os@neon-virtualbox:~/lab5$ ./c 5 5 1
+
+I am the parent, PID = 2570
+
+I am the first child, PID = 2571, PPID = 2570
+
+I am the second child, PID = 2572, PPID = 2570
+
+Child 1: Value 5 found at position 0
+Killed
+os@neon-virtualbox:~/lab5$ ./c 5 1 2 3 4 5 6
+
+
+I am the parent, PID = 2573
+I am the first child, PID = 2574, PPID = 2573
+
+I am the second child, PID = 2575, PPID = 2573
+
+Child 2: Value 5 found at position 4
+Killed
+os@neon-virtualbox:~/lab5$ ./c 5 1 5 2 3 4 6
+
+I am the parent, PID = 2576
+
+I am the first child, PID = 2577, PPID = 2576
+
+I am the second child, PID = 2578, PPID = 2576
+
+Child 1: Value 5 found at position 1
+Killed
+os@neon-virtualbox:~/lab5$ ./c 5 1 2 5 3 4
+
+I am the parent, PID = 2579
+
+I am the first child, PID = 2580, PPID = 2579
+
+I am the second child, PID = 2581, PPID = 2579
+
+Child 2: Value 5 found at position 2
+Killed
+os@neon-virtualbox:~/lab5$ ./c 5 1 2 3 4 6 
+
+I am the parent, PID = 2582
+
+I am the first child, PID = 2583, PPID = 2582
+
+I am the second child, PID = 2584, PPID = 2582
+
+Child 1 Terminates
+
+Child 2 Terminates
+
+Value Not Found
+os@neon-virtualbox:~/lab5$ ./c 5 1 2 3 4 6 7
+
+I am the parent, PID = 2585
+
+I am the first child, PID = 2586, PPID = 2585
+
+I am the second child, PID = 2587, PPID = 2585
+
+
+Child 1 Terminates
+Child 2 Terminates
+
+Value Not Found
+os@neon-virtualbox:~/lab5$ 
